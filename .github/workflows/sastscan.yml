@@ -15,6 +15,7 @@ jobs:
         WORKSPACE: https://github.com/open-policy-agent/opa/blob/master
       with:
         output: reports
+        type: golang
       continue-on-error: true
     - name: Upload scan reports
       uses: actions/upload-artifact@v1.0.0
